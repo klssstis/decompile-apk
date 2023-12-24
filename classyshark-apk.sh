@@ -6,7 +6,7 @@ source $SCRIPT_DIR/util.sh
 check $1
 
 newfoldername=${foldername}"-classyshark"
-rm -rf $foldername
+rm -rf $newfoldername
 
 if [ ! -d "$newfoldername" ];
 	then
