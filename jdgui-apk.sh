@@ -1,5 +1,5 @@
 #!/bin/sh
-SCRIPT_DIR="$(dirname "$0")"
+SCRIPT_DIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 export SCRIPT_DIR
 
 source $SCRIPT_DIR/util.sh
