@@ -4,7 +4,7 @@ source util.sh
 check $1
 
 newfoldername=${foldername}"-bytecodeviewer"
-rm -rf $foldername
+rm -rf $newfoldername
 
 if [ ! -d "$newfoldername" ];
 	then
