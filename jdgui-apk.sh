@@ -31,7 +31,9 @@ echo "Resource files decompile successful"
 cd $foldername
 echo `pwd`
 
-sh $SCRIPT_DIR/tools/dex2jar/d2j-dex2jar.sh $absolutename
+#sh $SCRIPT_DIR/tools/dex2jar/d2j-dex2jar.sh $absolutename
+
+sh $SCRIPT_DIR/tools/dex-tools-2.x/d2j-dex2jar.sh $absolutename
 suffix="-dex2jar.jar"
 jarname=${foldername}${suffix}
 
