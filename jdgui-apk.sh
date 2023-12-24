@@ -48,9 +48,11 @@ echo "Dex file decompile successful"
 path=`pwd`
 pathname=${path}"/"${jarname}
 echo ${pathname}
-foldname=${path}"/"${jarname}"_jadx"
 
-#echo "View the decompile file"
+foldname=${path}"/"${jarname}"_jadx"
+rm -rf $foldname
+
 
 sh /content/dec/tools/jadx/bin/jadx -d $foldname $pathname
+#echo "View the decompile file"
 #java -jar $SCRIPT_DIR/tools/jd-gui/jd-gui.jar $jarname
