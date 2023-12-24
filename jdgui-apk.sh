@@ -47,6 +47,6 @@ path=`pwd`
 pathname=${path}"/"${jarname}
 echo ${pathname}
 
-echo "View the decompile file"
+#echo "View the decompile file"
 
-java -jar $SCRIPT_DIR/tools/jd-gui/jd-gui.jar $jarname
+#java -jar $SCRIPT_DIR/tools/jd-gui/jd-gui.jar $jarname
